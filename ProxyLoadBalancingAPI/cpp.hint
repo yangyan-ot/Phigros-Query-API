@@ -1,0 +1,10 @@
+// 提示文件帮助 Visual Studio IDE 解释 Visual C++ 标识符,
+// 如函数和宏的名称。
+// 有关详细信息，请参见 https://go.microsoft.com/fwlink/?linkid=865984
+#define CROW_STATIC_DIRECTORY
+// 提示文件帮助 Visual Studio IDE 解释 Visual C++ 标识符,
+// 如函数和宏的名称。
+// 有关详细信息，请参见 https://go.microsoft.com/fwlink/?linkid=865984
+#define MIME_SUBTYPES SUB_TYPE(Star, "*") SUB_TYPE(Plain, "plain") SUB_TYPE(Html, "html") SUB_TYPE(Xhtml, "xhtml") SUB_TYPE(Xml, "xml") SUB_TYPE(Javascript, "javascript") SUB_TYPE(Css, "css") SUB_TYPE(OctetStream, "octet-stream") SUB_TYPE(Json, "json") SUB_TYPE(JsonSchema, "schema+json") SUB_TYPE(JsonSchemaInstance, "schema-instance+json") SUB_TYPE(FormUrlEncoded, "x-www-form-urlencoded") SUB_TYPE(FormData, "form-data") SUB_TYPE(Png, "png") SUB_TYPE(Gif, "gif") SUB_TYPE(Bmp, "bmp") SUB_TYPE(Jpeg, "jpeg")
+#define __attribute_warn_unused_result__ __attribute__ ((__warn_unused_result__))
+#define __attribute_warn_unused_result__

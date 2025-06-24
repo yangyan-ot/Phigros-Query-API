@@ -1,0 +1,40 @@
+# 日志
+log:
+  logger-name: "daily_logger" # 日志存储名称
+  filename: "logs/daily.txt" # 日志文件名
+  # 日志每天2点30分存储到本地文件夹
+  hour: 2
+  minute: 30
+
+# 数据库相关
+db:
+  path:
+    local: "./localDB.db"
+    phi: "./PhigrosInfo.db"
+    phi-player: "./PlayerRecords.db"
+
+# 搜索引擎相关
+# 搜索引擎使用(别名搜索),只适配了meilisearch
+# search-engine:
+#     meilisearch:
+#         url: "http://127.0.0.1:7700"
+#         authorization: "1145141919810893"
+
+server:
+  data-url: "https://rak3ffdi.cloud.tds1.tapapis.cn" # 鸽游下载存档的url
+  upload-data-url: "https://upload.qiniup.com" # 鸽游上传存档的url
+  concurrency: 0 # 0为根据系统默认设置线程,>0的是启用的线程数量
+  port: 8399 # 启用端口
+
+# 其他多进程启动相关
+other:
+  port: 8499 # 多进程启动端口
+  # 下面用于服务器启动[8300,8304]这个端口区间的程序(多进程)
+  exec-port-min: 8300 # 最小进程端口
+  exec-port-max: 8304 # 最大进程端口
+  unified-threads: 0 # 0为根据系统默认设置线程,>0的是启用的线程数量
+  proxy-uri: "http://127.0.0.1" # 代理url
+  resource-path: "./public/" # 资源路径
+  player-save-path: "./save" # 玩家的存档存放路径
+  plan-b: true # 如果鸽游服务器爆炸了,就使用已经下载的存档
+  start-delay: 100 # 启动延时(希望不要高速读取导致爆炸)
