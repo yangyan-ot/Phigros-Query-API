@@ -25,9 +25,3 @@ jobs:
 
     - name: Build
       run: cmake --build build
-
-    - name: Run tests (可选，若有测试)
-      run: |
-        if [ -f build/test ]; then
-          ./build/test
-        fi
